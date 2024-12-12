@@ -18,18 +18,18 @@ secretGenerator:
       - port=5432
       - database=awx
       - username=awx
-      - password=Ansible123!
+      - password=DemoPassword1234!
       - type=managed
 
   - name: awx-admin-password
     type: Opaque
     literals:
-      - password=Ansible123!
+      - password=DemoPassword1234!
 
 resources:
-  - github.com/ansible/awx-operator/config/default?ref=2.18.0
+  - github.com/ansible/awx-operator/config/default?ref=2.19.0
   - awx.yaml
 
 images:
   - name: quay.io/ansible/awx-operator
-    newTag: 2.18.0
+    newTag: 2.19.0
