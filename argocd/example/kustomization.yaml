@@ -14,7 +14,7 @@ secretGenerator:
   - name: awx-postgres-configuration
     type: Opaque
     literals:
-      - host=awx-postgres-13
+      - host=awx-postgres-15
       - port=5432
       - database=awx
       - username=awx
@@ -27,9 +27,9 @@ secretGenerator:
       - password=DemoPassword1234!
 
 resources:
-  - github.com/ansible/awx-operator/config/default?ref=2.19.0
+  - github.com/ansible/awx-operator/config/default?ref=2.19.1
   - awx.yaml
 
 images:
   - name: quay.io/ansible/awx-operator
-    newTag: 2.19.0
+    newTag: 2.19.1
