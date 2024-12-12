@@ -8,7 +8,7 @@ spec:
   admin_password_secret: awx-admin-password
 
   ingress_type: ingress
-  hostname: app.dhomane.com
+  hostname: ansible.dhomane.com
 
   postgres_configuration_secret: awx-postgres-configuration
 
